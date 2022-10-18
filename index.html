@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark py-3 px-3 fw-bold bg-info">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 fs-3 fw-bold">Weather Application</span>
+        </div>
+    </nav>
+
+    <!-- Search -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-8 offset-1 col-sm-6 offset-sm-2 col-md-4 offset-md-4">
+                <input class="search-box form-control me-2 p-3 rounded-pill" type="search" placeholder="Search"
+                    aria-label="Search">
+            </div>
+            <div class="col-2 p-2">
+            <div class="btn btn-info enter">Enter</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box pt-4 mb-5">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row border">
+                    <div
+                        class="col-12 text-center col-sm-12 text-sm-center col-md-6 text-md-start col-lg-6 text-lg-start  col-xl-6 text-xl-start col-xxl-6 text-xxl-start">
+                        <div class="image">
+                            <img src="images/6.jpeg" class="img-fluid" alt="weather">
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 text-center col-sm-12 text-sm-center col-md-6 text-md-start col-lg-6 text-lg-start col-xl-6 text-xl-start col-xxl-6 text-xxl-start mt-0 mt-sm-0 mt-md-3">
+                        <span class="tempreature"></span>
+                    </div>
+                </div>
+                <div class="row border text-center mt-3 fw-bold text-center">
+                    <div class="col fs-1">
+                        Country: <span class="country"></span>
+                    </div>
+                </div>
+                <div class="row border text-center mt-2 fw-bold">
+                    <div class="col fs-2">
+                        City: <span class="city"></span>
+                    </div>
+                    <div class="col fs-2">
+                        Weather: <span class="weather-condition"></span>
+                    </div>
+                </div>
+                <div class="row border text-center mt-2 fw-bold">
+                    <div class="col">
+                        Min: <span class="min"></span>
+                    </div>
+                    <div class="col">
+                        Humidity: <span class="humidity"></span> %
+                    </div>
+                </div>
+                <div class="row border text-center mt-2 fw-bold">
+                    <div class="col">
+                        Max: <span class="max"></span>
+                    </div>
+                    <div class="col">
+                        Wind: <span class="wind"></span> km/h
+                    </div>
+                </div>
+                <div class="row border text-center mt-2 fw-bold">
+                    <div class="col">
+                        pressure: <span class="pressure"></span>
+                    </div>
+                    <div class="col">
+                        Visibility: <span class="visible"></span> km
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- custom javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
